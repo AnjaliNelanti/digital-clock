@@ -1,0 +1,48 @@
+<html>
+<head>
+   <link rel="stylesheet" href="date.css">
+</head>
+<body>
+<p>hii</p>
+</body>
+<div id=element>
+    <script src="date.js"></script>
+</div>
+</html>
+//css
+body
+{
+    background-color: aqua;
+}
+p
+{
+    font-style: italic;
+    position: sticky;
+}
+#element
+{
+    color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+
+}
+//js
+var myDate = new Date();
+var hrs = myDate.getHours();		
+var hr=(hrs)%12
+var min=myDate.getMinutes()
+
+if(hrs < 12)
+    {
+        document.write("good morning"+" time is"+hr+":"+min+"A.M")
+    }
+else if(hrs >= 12 && hrs <= 17)
+{
+         document.write("good afternoon"+" time is"+hr+":"+min+"P.M")
+        
+}
+ else
+{
+    
+    document.write("good evening"+" time is"+hr+":"+min+"P.M")
+}
